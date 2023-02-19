@@ -7,7 +7,7 @@ const t = initTRPC.create();
 
 const appRouter = t.router({
   hello: t.procedure.query(() => {
-    return "hello";
+    return "hi";
   }),
   logToServer: t.procedure
     .input((v) => {
